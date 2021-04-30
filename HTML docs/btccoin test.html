@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Registration Form</h3>
+                    <?php if(!empty($arr_message['msg'])) { ?>
+                        <div class="alert <?php echo $arr_message['class']; ?>"><?php echo $arr_message['msg']; ?></div>
+                    <?php } ?>
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="exampleInputFullname">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputFullname" name="fullname" placeholder="Full Name" value="<?php if(isset($fullname)) echo $fullname; ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" value="<?php if(isset($email)) echo $email; ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" name="cpassword" placeholder="Confirm Password" required>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

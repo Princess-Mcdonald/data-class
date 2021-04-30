@@ -1,0 +1,40 @@
+1.
+What is the internet?
+What is the web?
+What is HTML? What does it stand for? 
+HTML tags-- paired and standalone. The first tag we will learn in our 
+web design carrer is the <html> tag. The <html> tag has a closing twin  </html>
+---------------
+Breaking at lines and paragraphs-- <p>/</p> and <br />
+---------------
+The preformatted text tag <pre>/</pre>
+---------------
+Using <b> to make text standout
+
+2.
+Using <i>
+HTML headers-- the head and the body
+Adding a title to you web page
+
+3.
+Using <u>, <strike> 
+
+4.
+Using header tags-- <h1> to <h7>
+Using footer tags-- <blockquote>
+Using the horizontal rule tag-- <hr />
+
+5.
+Introducing XHTML
+
+6.
+Presenting text attractively-- the <font> tag
+	Using bold and italics for navigation
+	Using underline
+	Applying font sizes, colors and faces
+
+7.
+Mathematical notation in HTML-- <sup> and <sub>
+
+8.
+Putting it all together-- A (fairly) complete web page

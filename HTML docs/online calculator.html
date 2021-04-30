@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            background-color: #d3d3d3;
+            border: 2px solid black;
+            border-radius: 8%;
+            padding: 5px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="width: 100%; height: 960px; background-color: white;">
+
+    <span style="text-align: center; color: red; font-family: fantasy;">
+        <h1 style="border: 2px solid green;">Online Calculator</h1>
+    </span>
+    <p>
+        <div id="calculator" style="width: 38%; height: 380px; background-color: azure;
+         border: 2px double red; border-radius: 6px; margin-left: 32%;">
+            <h2 style="text-align: center; font-family: fantasy; text-decoration:underline; 
+             margin-top: 5px;">Calculator</h2>
+            <div style="font-size: 18px; border: 1px solid black; background-color: white;
+             width: 90%; height: 60px; margin: auto; margin-top: 5px;">
+                <span class="message" id="message" style="font-family: Arial, Helvetica, sans-serif; font-size: 120%; font-weight: bold;"> <br /><?php echo $message ?>Message:</span>
+            </div>
+            <div style="margin: 20px; margin-top: 30px;">
+                <div>
+                    <form action="calculate.php" method="GET">
+                        <input id="hidden" type="text" name="hidden" value="" style="display: none; ">
+
+                        <a onclick="pressKey('9')">9</a>&nbsp;
+                        <a onclick="pressKey('8')">8</a>&nbsp;
+                        <a onclick="pressKey('7')">7</a>&nbsp;
+                        <br /><br />
+                        <a onclick="pressKey('6')">6</a>&nbsp;
+                        <a onclick="pressKey('5')">5</a>&nbsp;
+                        <a onclick="pressKey('4')">4</a>&nbsp;
+                        <br /><br />
+                        <a onclick="pressKey('3')">3</a>&nbsp;
+                        <a onclick="pressKey('2')">2</a>&nbsp;
+                        <a onclick="pressKey('1')" style="padding:5px 30px; ">1</a>&nbsp;
+                        <br /><br />
+                        <div style="height: 40px; width: 100%; ">
+
+                            <a onclick="pressKey('=')" style="padding:3px 46px; margin-right: 3px; background-color: red; border: 2px solid black; color: white; font-size: 150%; ">=
+                            </a>
+                            <a onclick="pressKey('+')" style="padding:3px 20px; background-color: blue; border: 2px solid black; color: white; font-size: 150%; display: inline; ">+</a>
+                            <a onclick="pressKey('-')" style="padding:3px 20px; background-color: blue; border: 2px solid black; color: white; font-size: 150%; display: inline; ">-</a>
+                        </div>
+                        <div style="height: 40%; width: 15%; position: relative; top: -41%; right: -80%; font-family: fantasy; ">
+                            &nbsp; <a onclick="pressKey( '*') " style="padding:10px 15px; background-color: blue; position: relative; top: -28px; border: 2px solid black; color: white; font-size: 150%; display: block; ">x</a> &nbsp;
+                            <a onclick="pressKey('/')" style="padding:10px 15px; background-color: blue; position: relative; top: -24%; border: 2px solid black; color: white; font-size: 150%; display: block; ">/</a>
+                        </div>
+                        <div style="height: 50px; width: 31%; float: right; position: absolute; top: 78%; ">
+                            <a onclick="pressKey('0')" style="padding:3px 20px; background-color: rgb(70, 219, 56); border: 2px solid black;
+                             color: white; font-size: 130%; display: inline; float: right; margin-left: 3px;">0</a>
+                            <a onclick="pressKey('clear')" style="padding:3px 20px; background-color: rgb(70, 219, 56); border: 2px solid black;
+                              color: white; font-size: 130%; display: inline;float: right;">AC</a>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--[
+        <script>
+            function pressKey(name) {
+                var writeMessage;
+                msg = document.getElementById("message");
+                writeMessage = document.getElementById("message");
+                document.getElementById("message").innerHTML = name;
+                prevhide = document.getElementById("hidden").value;
+                newhide = prevhide.concat(name);
+                document.getElementById("hidden").value = newhide;
+                alert(newhide);
+
+            }
+        </script>
+        ]-->
+        <script>
+            function pressKey(name) {
+                var logged;
+                var to_log;
+                var now_log;
+
+                if (name == "clear") {
+                    document.getElementById("message").innerHTML = " ";
+                    to_log = 0;
+                    now_log = 0;
+                    document.getElementById("hidden").value = 0;
+                } else if (name == "=") {
+                    base_url = "calculate.php?hidden=";
+                    url = base_url.concat(now_log);
+                    //alert(now_log);
+                    answer = document.getElementById("hidden").value;
+                    document.getElementById("message").innerHTML = eval(answer);
+                } else {
+                    to_log = document.getElementById("hidden").value;
+                    now_log = to_log.concat(name);
+                    document.getElementById("hidden").value = now_log;
+                    document.getElementById("message").innerHTML = now_log;
+                }
+
+            }
+        </script>
+</body>
+
+</html>

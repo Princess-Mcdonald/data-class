@@ -1,0 +1,82 @@
+Hello, everybody. My name is Icheka and I am going to teach you professional 
+web design.
+I am a computer programmer and expert web designer with over ten years 
+experience.
+Starting today, I will give you what I know.
+
+So, the first thing we will be discussing today is the definition of
+HTML: html stands for hypertext markup language and it is the most widely used
+ markup language in the world!
+Over 97% of the web was built using some form or version of it.
+
+a markup lang is a special computer language that allows you to markup or 
+format text documents. because at its most basic level, 
+the world wide web is just a ginormous collection of text docs!
+
+At the end of the lesson today you would have built your first web document!
+
+Just as different programming languages have special software for reading 
+and executing them,
+html has its own special software. the html interpreter is called a browser.
+
+thats ryt. The simple chrome or explorer that you have is actually a hghly 
+sofisticated 
+html interprter, able to convert the html lang into the beautiful text and 
+graphics that you see on
+your screen.
+
+what can html do? html is responsible for most of what you see when you load a
+ website like google or facebook. html presents the browser
+with text and graohics (that is oictures, audio and video) and directs it to 
+place them appropriately.
+without html the internet could hardly function.
+
+Now that we undersrand what html is and what it does lets talk about how 
+html docs are saved.
+html docs are saved with the .html file extension. a file ext is a short name 
+preceded by a fullstop that tells the computer what kind 
+of file it is. a good example is .apk for android apps. for html docs, the file 
+ext is .html so we always have to saveour html docs in that file format 
+
+here we can see an email message sent by a guy named Dave Taylor. So lets type 
+this into our text editor (for android i rec anwriter free, for pc notepad or vs code)
+so we type this email in our editor and press save. we save it in our documents 
+folder as email by dave.html. then we go to our docs folder, click/tap on it, and the 
+browser automatically opens it up.
+ 
+oops! thts not what we wanted at all!
+
+Why this happen? I mean, we typed everything right, didnt we? What went wrong?
+
+What went wrong is that we tried to speak english to the computer.
+The comp does not understand English. We need to converse with it in a language 
+it acfually understands.
+And since what we want to do is build a webpage, we must use HTML.
+How is html written?
+Html is written using something we call tags, which are just special units of
+ information that the browser needs
+to know exactly how to format the web page. There are two kinds of tags in html--
+ the paired tag and the standalone tag. paired tags are the ones that require an
+opening tag and a closing tag to function properly.
+On the other hand, standalone tags dont have closing tags. They dont require a 
+closing tag to do work.
+Lets see some of these tags now.
+
+The first tag we will look at is the html tag. the html tag is a paired tag and 
+it is the first tag in a html document. The html tag 
+looks like this. we fix it at the beginning and at the end of our html document. 
+The html tag tells the browser "hey. this is a html document. Treat it
+as such." you can see how i fix an opeing tag and a closing tag at the beginning 
+and end of my text doc. I'll save this
+and re-render it in my web browser. Nothing's changed, right? that is because we 
+have not done any actual formatting yet.
+
+the next tag we'll learn is the paragraph tag. <p> and </p>. the p tag is used to
+ specify where we want paragraphs. we enclose the text with the paragraph tag,
+then we can save and view it in the browser. this is good. but its not what we
+ want yet, is it?
+so we'll use the break line tag <br /> the br tag is also called the new line tag 
+and we use it to tell the browser to break the current line i.e 
+to start a new line right where the tag is placed. so we'll edit our document
+ like this. we'll save it and reload our web page.
+f

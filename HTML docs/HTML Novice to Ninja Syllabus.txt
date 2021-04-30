@@ -1,0 +1,8 @@
+1. HTML Basics
+2. Presenting text attractively
+3. CSS basics -- types, components, text formatting
+4. Lists
+5. Images and links
+6. Forms and user input
+7. Tables
+8. CGI
